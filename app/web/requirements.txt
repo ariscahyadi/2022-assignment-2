@@ -1,0 +1,8 @@
+cryptography
+filetype
+flask
+Flask-Limiter
+insecure-package==0.1.0
+flask-login
+pymysql
+requests
