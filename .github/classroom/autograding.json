@@ -43,9 +43,9 @@
     {
       "name": "SCA Result Verification",
       "setup": "",
-      "run": "diff logs/safety-answer.log logs/safety.log",
+      "run": "grep \"vulnerabilities found\" safety.log",
       "input": "",
-      "output": "",
+      "output": "| No known security vulnerabilities found.",
       "comparison": "included",
       "timeout": 50,
       "points": 30
@@ -54,9 +54,9 @@
     {
       "name": "SAST Result Verification",
       "setup": "",
-      "run": "diff logs/bandit-answer.log logs/bandit.log",
+      "run": "grep SEVERITY.MEDIUM bandit.log | tail -1",
       "input": "",
-      "output": "",
+      "output": "\"SEVERITY.MEDIUM\": 0.0",
       "comparison": "included",
       "timeout": 50,
       "points": 30
