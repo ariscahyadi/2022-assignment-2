@@ -54,7 +54,7 @@
     {
       "name": "SAST Result Verification",
       "setup": "",
-      "run": "cd logs; grep SEVERITY.MEDIUM \" bandit.log | tail -1",
+      "run": "cd logs; grep SEVERITY.MEDIUM bandit.log | tail -1",
       "input": "",
       "output": "\"SEVERITY.MEDIUM\": 0.0",
       "comparison": "included",
