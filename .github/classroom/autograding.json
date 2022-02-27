@@ -43,7 +43,7 @@
     {
       "name": "SCA Result Verification",
       "setup": "",
-      "run": "grep \"vulnerabilities found\" logs\\safety.log ",
+      "run": "cd logs; grep \"vulnerabilities found\" safety.log ",
       "input": "",
       "output": "| No known security vulnerabilities found.",
       "comparison": "included",
@@ -54,7 +54,7 @@
     {
       "name": "SAST Result Verification",
       "setup": "",
-      "run": "grep SEVERITY.MEDIUM \"logs\\bandit.log\" | tail -1",
+      "run": "cd logs; grep SEVERITY.MEDIUM \" bandit.log | tail -1",
       "input": "",
       "output": "\"SEVERITY.MEDIUM\": 0.0",
       "comparison": "included",
