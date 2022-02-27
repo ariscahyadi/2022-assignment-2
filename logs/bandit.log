@@ -81,7 +81,7 @@
       "CONFIDENCE.UNDEFINED": 0.0,
       "SEVERITY.HIGH": 0.0,
       "SEVERITY.LOW": 12.0,
-      "SEVERITY.MEDIUM": 1.0,
+      "SEVERITY.MEDIUM": 0.0,
       "SEVERITY.UNDEFINED": 0.0,
       "loc": 344,
       "nosec": 0
