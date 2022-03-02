@@ -38,11 +38,6 @@ jobs:
       
       - run: |
           mkdir -p logs/
-          
-      - name: Safety
-        run: |
-          pip install safety
-          safety check -r app/web/requirements.txt > logs/result.txt
          
       - uses: actions/upload-artifact@v2
         with:
@@ -52,7 +47,7 @@ jobs:
       - name: Pyraider
         run: |
           pip install pyraider
-          pyraider check -f app/web/requirements.txt
+          pyraider check -f app/web/requirements.txt > logs/result.txt
           
       - uses: actions/upload-artifact@v2
         with:
