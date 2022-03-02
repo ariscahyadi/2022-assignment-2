@@ -37,12 +37,7 @@ jobs:
       - uses: actions/checkout@v2   
       
       - run: |
-          mkdir -p logs/
-         
-      - uses: actions/upload-artifact@v2
-        with:
-          name: logs
-          path: logs/result.txt   
+          mkdir -p logs/ 
           
       - name: Pyraider
         run: |
@@ -52,7 +47,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: logs
-          path: logs/result.json 
+          path: logs/result.txt
   
   test:
     needs: [build, sca]
